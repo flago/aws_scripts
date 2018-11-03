@@ -1,6 +1,5 @@
 import requests
 
-
 site = 'http://rmerces.com'
 
 try:
