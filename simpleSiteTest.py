@@ -1,11 +1,10 @@
-from requests import get
+import requests
+
 
 site = 'http://rmerces.com'
 
-response = get(site, timeout=5)
-
 try:
-    response = response.raise_for_status()
+    requests.get(site, timeout=5)
     print('Site OK!')
-except:
+except Exception:
     print('Houston, we have a problem!')
