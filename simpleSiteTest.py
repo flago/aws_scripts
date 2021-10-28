@@ -8,6 +8,7 @@ try:
     print('Site OK!')
 except Exception:
     print('Houston, we have a problem!')
+    envia_notificacao()
     
 def envia_notificacao():
     client.publish(
